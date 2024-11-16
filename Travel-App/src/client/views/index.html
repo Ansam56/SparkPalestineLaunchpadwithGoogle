@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title>Travel App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Travel App</h1>
+    </header>
+    <div id="app">
+      <form id="myform">
+        <label for="location">Destination:</label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          placeholder="Enter Your destination, Like Jerusalem"
+          required
+        />
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required />
+        <label for="return-date">Return Date:</label>
+        <input type="date" name="return-date" id="return-date" required />
+        <button type="submit">Get Your Trip Details</button>
+      </form>
+      <div id="details"></div>
+      <div id="locationInfo"></div>
+    </div>
+    <footer>
+      <p>Ansam &copy; Aug-2024</p>
+    </footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script>
+  </body>
+</html>

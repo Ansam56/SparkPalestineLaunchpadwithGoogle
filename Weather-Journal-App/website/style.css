@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
+body {
+  background: #fffff8;
+  font-family: -apple-system, sans-serif;
+}
+
+#app {
+  display: grid;
+  grid-auto-rows: minmax(150px, auto);
+  height: 100vh;
+  justify-content: center;
+  grid-gap: 1em;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.holder {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.holder input,
+.holder textarea {
+  padding: 0.5em;
+}
+
+.entry {
+  border: #3b4a6b 2px solid;
+}
+
+#zip {
+  border: #3b4a6b 2px solid;
+}
+
+#zip.error {
+  border: #3b4a6b 2px solid;
+}
+
+#conditions {
+  display: flex;
+  flex-direction: row;
+}
+
+#conditions p {
+  margin: 0;
+}
+
+#conditions img {
+  height: 2em;
+}
+
+#generate:hover {
+  background-color: #f0d43a;
+  color: #22b2da;
+}
+
+label {
+  display: block;
+  font-size: 27px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 320px;
+  padding: 0.5em;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: #3b4a6b 2px solid;
+}
+
+input {
+  height: 60px;
+}
+
+button {
+  width: 100%;
+  height: 100px;
+  background: #3b4a6b;
+  color: #f0d43a;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px #444;
+  margin: 1em auto;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>News NLP</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Evaluate a News Article with Natural Language Processing</h1>
+    </header>
+    <main>
+      <section>
+        <form
+          id="myform"
+          method="post"
+          onsubmit="return Client.processSubmission(event)"
+        >
+          <label class="enter" for="name">Enter a URL </label>
+          <input
+            id="name"
+            type="text"
+            name="url"
+            placeholder="Paste the URL"
+            required
+          />
+          <div class="msgDisplay"></div>
+          <button id="btn" type="submit">Click</button>
+          <div class="loader">loading...</div>
+          <div class="alert"></div>
+        </form>
+      </section>
+
+      <section>
+        <p>Results:</p>
+        <div id="results"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Ansam &copy;Aug - 2024</p>
+    </footer>
+  </body>
+</html>

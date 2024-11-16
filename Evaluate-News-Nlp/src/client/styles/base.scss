@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ background-color: #154c79;
+
+}
+
+main {
+  flex: 2;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+section p {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+section div .resultData {
+  color: yellow;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+
+}
